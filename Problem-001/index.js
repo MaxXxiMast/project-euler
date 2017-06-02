@@ -8,3 +8,4 @@ function getSumOfMultiples(z){
 }
 
 getSumOfMultiples(1000);
+// >233168
