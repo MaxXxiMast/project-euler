@@ -15,3 +15,6 @@ function getSumOfEvenFibonacci(n){
 	}
 	return arr.filter(function(a){return a%2==0}).reduce(function(a,b){return a+b});
 }
+
+getSumOfEvenFibonacci(4000000);
+// >4613732
