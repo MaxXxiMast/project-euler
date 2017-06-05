@@ -3,11 +3,15 @@
 // Find the largest palindrome made from the product of two 3-digit numbers.
 
 function checkPalindrome(int){
-	var reverseInt = parseInt(int.toString().split('').reverse().join(''));
-	if(int === reverseInt){
-		return true;
+	if(typeof(int) === 'number'){
+		var reverseInt = parseInt(int.toString().split('').reverse().join(''));
+		if(int === reverseInt){
+			return true;
+		} else {
+			return false;
+		}
 	} else {
-		return false;
+		console.log('Please enter a number. You have entered a '+ typeof(int) +' value.')
 	}
 }
 
