@@ -3,10 +3,10 @@
 // What is the largest prime factor of the number 600851475143 ?
 
 function largestPrimeFactor(number, divisor=2){
-	while(number % divisor == 0 && Math.pow(divisor, 2) <= number){
+	while(number % divisor == 0 && Math.pow(number, 2) <= number){
 		divisor++
 	}
-	return (Math.pow(divisor, 2) <= number) ? largestPrimeFactor(number/divisor, divisor) : number;
+	return (Math.pow(number, 2) <= number) ? largestPrimeFactor(number/divisor, divisor) : number;
 }
 
 largestPrimeFactor(600851475143);
